@@ -275,6 +275,7 @@ def _drawDelayGraph(RayListAnalysed, Detector, Distance, DeltaFT, DrawAiryAndFou
         fig.clear(keep_observers=True)
 
     ax = Axes3D(fig)
+    fig.add_axes(ax)
     ax.set_xlabel("X (µm)")
     ax.set_ylabel("Y (µm)")
     ax.set_zlabel("Delay (fs)")
